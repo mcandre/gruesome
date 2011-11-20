@@ -3,5 +3,6 @@ gruesome - A Groovy port of the QuickCheck unit test framework
 EXAMPLE
 
 	$ ./example.groovy
-	Random integer: 15078404
-	Random boolean: false
+	Random integer: 42362673
+	Random boolean: true
+	Random byte: 41
