@@ -4,5 +4,5 @@ EXAMPLE
 
 	$ ./example.groovy
 	*** Failed!
-	1
+	[1676070417]
 	+++ OK, passed 100 tests.
