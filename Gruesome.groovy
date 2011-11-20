@@ -12,4 +12,23 @@ class Gruesome {
 	}
 
 	static def genString = { Gruesome.genArray(Gruesome.genChar).join("") }
+
+	static apply(clos, args) {
+		def c = clos
+		args.each({ a -> c = c.curry(a) })
+
+		c()
+	}
+
+	static forAll(property, generators) {
+		def testCases = (0 .. 99).each({ i -> generators.collect({ g -> g() }) })
+		def failures = testCases.findAll({ testCase -> !apply(property, testCase) })
+
+		if (failures.size > 0) {
+			println "*** Failed!"
+			println failures[0]
+		}
+
+		println "+++ OK, passed 100 tests."
+	}
 }

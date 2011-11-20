@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-println "Random integer: " + Gruesome.genInt()
-println "Random boolean: " + Gruesome.genBool()
-println "Random byte: " + Gruesome.genByte()
-println "Random character: " + Gruesome.genChar()
-println "Random string: " + Gruesome.genString()
+import java.util.Random
+
+def isEven = { i -> i % 2 == 0 }
+
+Gruesome.forAll(isEven, [Gruesome.genInt])
