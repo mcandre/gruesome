@@ -1,5 +1,9 @@
 gruesome - A Groovy port of the QuickCheck unit test framework
 
+VERSION
+
+0.0.1
+
 EXAMPLE
 
 	$ ./example.groovy

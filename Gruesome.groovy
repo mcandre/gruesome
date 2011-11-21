@@ -1,6 +1,8 @@
 import java.util.Random
 
 class Gruesome {
+	static def VERSION = "0.0.1"
+
 	static def genInt = { new Random().nextInt() }
 	static def genBool = { new Random().nextBoolean() }
 	static def genByte = { (Gruesome.genInt().abs() % 256) as int }
