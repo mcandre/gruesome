@@ -6,6 +6,7 @@ VERSION
 
 EXAMPLE
 
+	$ make install
 	$ ./example.groovy
 	*** Failed!
 	[833472555]
