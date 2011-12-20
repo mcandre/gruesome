@@ -1,14 +1,14 @@
-gruesome - A Groovy port of the QuickCheck unit test framework
+# gruesome - A Groovy port of the QuickCheck unit test framework
 
-HOMEPAGE
+## HOMEPAGE
 
 [http://www.yellosoft.us/quickcheck](http://www.yellosoft.us/quickcheck)
 
-VERSION
+## VERSION
 
 0.0.1
 
-EXAMPLE
+## EXAMPLE
 
 	$ make install
 	$ ./example.groovy
