@@ -2,7 +2,7 @@
 
 ## HOMEPAGE
 
-[http://www.yellosoft.us/quickcheck](http://www.yellosoft.us/quickcheck)
+http://www.yellosoft.us/quickcheck
 
 ## VERSION
 
@@ -10,9 +10,9 @@
 
 ## EXAMPLE
 
-	$ make install
-	$ ./example.groovy
-	*** Failed!
-	[833472555]
-	+++ OK, passed 100 tests.
-	+++ OK, passed 100 tests.
+    $ make install
+    $ ./example.groovy
+    *** Failed!
+    [833472555]
+    +++ OK, passed 100 tests.
+    +++ OK, passed 100 tests.
