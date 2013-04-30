@@ -3,18 +3,18 @@
 def isEven = { i -> i % 2 == 0 }
 
 def genEven = {
-	def i = Gruesome.genInt()
+  def i = Gruesome.genInt()
 
-	if (i % 2 as int != 0) {
-		i + 1
-	}
-	else {
-		i
-	}
+  if (i % 2 as int != 0) {
+    i + 1
+  }
+  else {
+    i
+  }
 }
 
 def reverse = { s ->
-	((s.length() - 1) .. 0).collect { i -> s.charAt(i) }.join("")
+  ((s.length() - 1) .. 0).collect { i -> s.charAt(i) }.join("")
 }
 
 def reversible = { s -> reverse(reverse(s)) == s }
