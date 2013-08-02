@@ -4,6 +4,10 @@
 
 http://www.yellosoft.us/quickcheck
 
+## LICENSE
+
+FreeBSD
+
 ## VERSION
 
 0.0.1
