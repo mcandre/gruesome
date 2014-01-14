@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 
-def isEven = { i -> i % 2 == 0 }
+final def isEven = { i -> i % 2 == 0 }
 
-def genEven = {
-  def i = Gruesome.genInt()
+final def genEven = {
+  final def i = Gruesome.genInt()
 
   if (i % 2 as int != 0) {
     i + 1
@@ -13,11 +13,7 @@ def genEven = {
   }
 }
 
-def reverse = { s ->
-  ((s.length() - 1) .. 0).collect { i -> s.charAt(i) }.join("")
-}
-
-def reversible = { s -> reverse(reverse(s)) == s }
+final def reversible = { s -> s.reverse().reverse() == s }
 
 /* Are all integers even? */
 Gruesome.forAll(isEven, [Gruesome.genInt])
