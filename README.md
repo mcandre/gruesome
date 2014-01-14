@@ -1,5 +1,14 @@
 # gruesome - A Groovy port of the QuickCheck unit test framework
 
+# EXAMPLE
+
+    $ make install
+    $ groovy example.groovy
+    *** Failed!
+    [833472555]
+    +++ OK, passed 100 tests.
+    +++ OK, passed 100 tests.
+
 # HOMEPAGE
 
 http://www.yellosoft.us/quickcheck
@@ -18,23 +27,33 @@ FreeBSD
 
 ## Optional
 
-* [Ruby](https://www.ruby-lang.org/) 1.9+
-* [Guard](http://guardgem.org/) 1.8.2+
+* [Ruby](https://www.ruby-lang.org/) 2+
+* [Bundler](http://bundler.io/)
+* [Cucumber](http://cukes.info/)
+* [Guard](http://guardgem.org/)
 
-Use `bundle` to install Guard.
+# TESTING
 
-# EXAMPLE
+Ensure the example script works as expected:
+
+    $ bundle
+    $ cucumber
+    Feature: Run example tests
+
+      Scenario: Running example tests            # features/run_example_tests.feature:3
+        Given the program has finished           # features/step_definitions/steps.rb:1
+        Then the output is correct for each test # features/step_definitions/steps.rb:5
+
+    1 scenario (1 passed)
+    2 steps (2 passed)
+    0m1.167s
+
+Guard can automatically run testing when the code changes:
+
+    $ bundle
+    $ guard -G Guardfile-cucumber
+    ...
+
+# INSTALL
 
     $ make install
-    $ ./example.groovy
-    *** Failed!
-    [833472555]
-    +++ OK, passed 100 tests.
-    +++ OK, passed 100 tests.
-
-# DEVELOPMENT
-
-Start Guard in a shell, and it will automatically run unit tests when the source code changes:
-
-    $ guard
-        ...
