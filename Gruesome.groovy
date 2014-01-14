@@ -29,9 +29,13 @@ class Gruesome {
     if (failures.size > 0) {
       println "*** Failed!"
       println failures[0]
+
+      false
     }
     else {
       println "+++ OK, passed 100 tests."
+
+      true
     }
   }
 }
