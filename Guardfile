@@ -1,5 +1,5 @@
 guard :shell do
-  watch(/.+\.groovy/) do |m|
+  watch(/^.*\.groovy$/) do |m|
     title = 'Compile'
     eager 'make'
     status = ($?.success? && :success) || :failed
