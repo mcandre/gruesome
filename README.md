@@ -1,5 +1,13 @@
 # gruesome - A Groovy port of the QuickCheck unit test framework
 
+# HOMEPAGE
+
+http://www.yellosoft.us/quickcheck
+
+# INSTALL
+
+    $ make install
+
 # EXAMPLE
 
     $ make install
@@ -9,17 +17,9 @@
     +++ OK, passed 100 tests.
     +++ OK, passed 100 tests.
 
-# HOMEPAGE
-
-http://www.yellosoft.us/quickcheck
-
 # LICENSE
 
 FreeBSD
-
-# VERSION
-
-0.0.1
 
 # REQUIREMENTS
 
@@ -31,8 +31,11 @@ FreeBSD
 * [Bundler](http://bundler.io/)
 * [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
+* [aspelllint](https://github.com/mcandre/aspelllint)
 
-# TESTING
+# DEVELOPMENT
+
+## Testing
 
 Ensure the example script works as expected:
 
@@ -48,12 +51,10 @@ Ensure the example script works as expected:
     2 steps (2 passed)
     0m1.167s
 
+## Local CI
+
 Guard can automatically run testing when the code changes:
 
     $ bundle
     $ guard -G Guardfile-cucumber
     ...
-
-# INSTALL
-
-    $ make install
