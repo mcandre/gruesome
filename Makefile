@@ -13,5 +13,10 @@ install: jar
 	echo "\n# Gruesome" >> ~/.profile
 	echo "export CLASSPATH=\$$CLASSPATH:${CURDIR}/${JAR}" >> ~/.profile
 
+lili:
+	bundle exec lili .
+
+lint: lili
+
 clean:
 	-rm ${JAR}
