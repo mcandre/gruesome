@@ -6,16 +6,21 @@ http://www.yellosoft.us/quickcheck
 
 # INSTALL
 
-    $ make install
+    $ mvn install
 
 # EXAMPLE
 
-    $ make install
-    $ groovy example.groovy
-    *** Failed!
-    [833472555]
-    +++ OK, passed 100 tests.
-    +++ OK, passed 100 tests.
+```
+$ mvn install
+$ mvn exec:java -Dexec.mainClass=example
+*** Failed!
+[-474246107]
++++ OK, passed 100 tests.
++++ OK, passed 100 tests.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+```
 
 # LICENSE
 
@@ -24,6 +29,7 @@ FreeBSD
 # REQUIREMENTS
 
 * [Groovy](http://groovy.codehaus.org/) 1.8.3+
+* [Maven](http://maven.apache.org/) 2+
 
 ## Optional
 

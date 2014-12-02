@@ -1,14 +1,16 @@
 Given(/^the program has finished$/) do
-  @cucumber = `groovy example.groovy`
+  @cucumber = `mvn exec:java -Dexec.mainClass=example`
 end
 
 Then(/^the output is correct for each test$/) do
   lines = @cucumber.split("\n")
 
-  lines.length.should == 4
+  lines.length.should >= 4
 
-  lines[0].should == '*** Failed!'
-  lines[1].should =~ /^\[(-)?[0-9]+\]$/
-  lines[2].should == '+++ OK, passed 100 tests.'
-  lines[3].should == '+++ OK, passed 100 tests.'
+  lines.include?('*** Failed!').should == true
+  start = lines.find_index('*** Failed!')
+
+  lines[start + 1].should =~ /^\[(-)?[0-9]+\]$/
+  lines[start + 2].should == '+++ OK, passed 100 tests.'
+  lines[start + 3].should == '+++ OK, passed 100 tests.'
 end

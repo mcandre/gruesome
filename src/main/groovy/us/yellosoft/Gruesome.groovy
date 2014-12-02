@@ -1,3 +1,5 @@
+package us.yellosoft.gruesome
+
 import java.util.Random
 
 class Gruesome {

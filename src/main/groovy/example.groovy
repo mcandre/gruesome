@@ -1,4 +1,4 @@
-#!/usr/bin/env groovy
+import us.yellosoft.gruesome.Gruesome
 
 final def isEven = { i -> i % 2 == 0 }
 
