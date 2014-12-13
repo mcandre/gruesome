@@ -1,13 +1,5 @@
 # gruesome - A Groovy port of the QuickCheck unit test framework
 
-# HOMEPAGE
-
-http://www.yellosoft.us/quickcheck
-
-# INSTALL
-
-    $ mvn install
-
 # EXAMPLE
 
 ```
@@ -20,6 +12,18 @@ $ mvn exec:java -Dexec.mainClass=example
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
+```
+
+See [example.groovy](https://github.com/mcandre/gruesome/blob/master/src/main/groovy/example.groovy) for more information.
+
+# HOMEPAGE
+
+http://www.yellosoft.us/quickcheck
+
+# INSTALL
+
+```
+$ mvn install
 ```
 
 # LICENSE
@@ -45,22 +49,26 @@ FreeBSD
 
 Ensure the example script works as expected:
 
-    $ bundle
-    $ cucumber
-    Feature: Run example tests
+```
+$ bundle
+$ cucumber
+Feature: Run example tests
 
-      Scenario: Running example tests            # features/run_example_tests.feature:3
-        Given the program has finished           # features/step_definitions/steps.rb:1
-        Then the output is correct for each test # features/step_definitions/steps.rb:5
+  Scenario: Running example tests            # features/run_example_tests.feature:3
+    Given the program has finished           # features/step_definitions/steps.rb:1
+    Then the output is correct for each test # features/step_definitions/steps.rb:5
 
-    1 scenario (1 passed)
-    2 steps (2 passed)
-    0m1.167s
+1 scenario (1 passed)
+2 steps (2 passed)
+0m1.167s
+```
 
 ## Local CI
 
 Guard can automatically run testing when the code changes:
 
-    $ bundle
-    $ guard -G Guardfile-cucumber
-    ...
+```
+$ bundle
+$ guard -G Guardfile-cucumber
+...
+```
