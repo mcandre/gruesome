@@ -1,4 +1,4 @@
-# gruesome - A Groovy port of the QuickCheck unit test framework
+# gruesome - a Groovy port of the QuickCheck unit test framework
 
 # EXAMPLE
 

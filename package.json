@@ -1,10 +1,10 @@
 {
-  "name": "dotfiles",
-  "description": "Configuration files",
+  "name": "gruesome",
+  "description": "a Groovy port of the QuickCheck unit test framework",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mcandre/dotfiles.git"
+    "url": "git://github.com/mcandre/gruesome.git"
   },
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
   "directories": {
