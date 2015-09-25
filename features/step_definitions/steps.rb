@@ -1,5 +1,5 @@
 Given(/^the program has finished$/) do
-  @cucumber = `mvn exec:java -Dexec.mainClass=example`
+  @cucumber = `java -cp build/libs/gruesome-all.jar example`
 end
 
 Then(/^the output is correct for each test$/) do

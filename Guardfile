@@ -1,7 +1,7 @@
 guard :shell do
   watch(/^.*\.groovy$/) do |m|
     title = 'Compile'
-    eager 'make'
+    eager 'gradle install'
     status = ($?.success? && :success) || :failed
     n '', title, status
     ''

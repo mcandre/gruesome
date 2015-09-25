@@ -3,8 +3,8 @@
 # EXAMPLE
 
 ```
-$ mvn install
-$ mvn exec:java -Dexec.mainClass=example
+$ gradle install
+$ java -cp build/libs/gruesome-all.jar example
 *** Failed!
 [-474246107]
 +++ OK, passed 100 tests.
@@ -23,7 +23,7 @@ http://www.yellosoft.us/quickcheck
 # INSTALL
 
 ```
-$ mvn install
+$ gradle install
 ```
 
 # LICENSE
@@ -33,7 +33,7 @@ FreeBSD
 # REQUIREMENTS
 
 * [Groovy](http://groovy.codehaus.org/) 1.8.3+
-* [Maven](http://maven.apache.org/) 2+
+* [Gradle](https://docs.gradle.org/current/userguide/tutorial_groovy_projects.html) 2.1+
 
 ## Optional
 

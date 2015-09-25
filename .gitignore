@@ -1,3 +1,5 @@
 target/
+build/
+.gradle/
 Gemfile.lock
 node_modules/
