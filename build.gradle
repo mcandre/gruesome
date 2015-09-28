@@ -20,6 +20,8 @@ checkstyle {
   configProperties = [configDir: "${rootDir}/config"]
 }
 
+pmd { consoleOutput = true }
+
 repositories {
   mavenCentral()
   mavenLocal()
