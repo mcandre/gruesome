@@ -37,11 +37,14 @@ FreeBSD
 
 ## Optional
 
+* [Sonar](http://www.sonarqube.org/)
 * [Ruby](https://www.ruby-lang.org/) 2+
 * [Bundler](http://bundler.io/)
 * [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
 * [aspelllint](https://github.com/mcandre/aspelllint)
+
+E.g., `brew install gradle sonar sonar-runner && bundle`
 
 # DEVELOPMENT
 
