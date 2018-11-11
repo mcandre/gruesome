@@ -1,6 +1,6 @@
 plugins {
-  id 'com.github.johnrengelman.shadow' version '1.2.3'
-  id 'org.sonarqube' version '1.1'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+    id 'org.sonarqube' version '1.1'
 }
 
 apply plugin: 'groovy'
@@ -14,12 +14,12 @@ group = 'us.yellosoft'
 version = '0.1'
 
 compileJava {
-  options.compilerArgs << '-Xlint:all'
+    options.compilerArgs << '-Xlint:all'
 }
 
 checkstyle {
-  configFile = "${rootProject.projectDir}/config/checkstyle/checkstyle.xml" as File
-  configProperties = [configDir: "${rootProject.projectDir}/config"]
+    configFile = "${rootProject.projectDir}/config/checkstyle/checkstyle.xml" as File
+    configProperties = [configDir: "${rootProject.projectDir}/config"]
 }
 
 findbugs {
@@ -27,22 +27,22 @@ findbugs {
 }
 
 tasks.withType(FindBugs) {
-  reports {
-    xml.enabled = false
-    html.enabled = true
-  }
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
 }
 
 pmd { consoleOutput = true }
 
 repositories {
-  mavenCentral()
-  mavenLocal()
+    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
-  compile 'org.codehaus.groovy:groovy-all:2.2.1'
+    compile 'org.codehaus.groovy:groovy-all:2.2.1'
 
-  testCompile 'junit:junit:4.12'
-  testCompile 'org.slf4j:slf4j-log4j12:1.7.12'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.slf4j:slf4j-log4j12:1.7.12'
 }

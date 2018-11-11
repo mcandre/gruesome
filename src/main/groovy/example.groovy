@@ -3,14 +3,14 @@ import us.yellosoft.gruesome.Gruesome
 final def isEven = { i -> i % 2 == 0 }
 
 final def genEven = {
-  final def i = Gruesome.genInt()
+    final def i = Gruesome.genInt()
 
-  if (i % 2 as int != 0) {
-    i + 1
-  }
-  else {
-    i
-  }
+    if (i % 2 as int != 0) {
+        i + 1
+    }
+    else {
+        i
+    }
 }
 
 final def reversible = { s -> s.reverse().reverse() == s }
