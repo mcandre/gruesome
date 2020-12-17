@@ -32,8 +32,8 @@ FreeBSD
 
 # REQUIREMENTS
 
-* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7+
-* [Gradle](http://gradle.org/) 2.1+
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.11+
+* [Gradle](http://gradle.org/) 6+
 
 ## Optional
 
