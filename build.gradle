@@ -38,7 +38,7 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.2.1'
+    compile 'org.codehaus.groovy:groovy-all:3.0.7'
 
     testCompile 'junit:junit:4.12'
     testCompile 'org.slf4j:slf4j-log4j12:1.7.12'

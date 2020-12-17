@@ -18,9 +18,8 @@ class Gruesome {
     static final def genString = { Gruesome.genArray(Gruesome.genChar).join("") }
 
     static final apply(final clos, final args) {
-        final def c = clos
+        def c = clos
         args.each { final a -> c = c.curry(a) }
-
         c()
     }
 
